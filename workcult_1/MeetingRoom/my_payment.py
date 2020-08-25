@@ -1,5 +1,6 @@
 import razorpay, requests
-client = razorpay.Client(auth=("rzp_live_RUZd9hmSQpstnm", "ySdmpH4vKgloCSqlZa0squvq"))
+# write your razorpay credentials here
+# client = razorpay.Client(auth=("rzpnnslv", "sfdlsjfl"))
 
 
 def get_customer(customer_id):
