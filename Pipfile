@@ -1,0 +1,31 @@
+[[source]]
+name = "pypi"
+url = "https://pypi.org/simple"
+verify_ssl = true
+
+[dev-packages]
+
+[packages]
+django = "*"
+django-cors-headers = "*"
+djangorestframework = "*"
+markdown = "*"
+django-filter = "*"
+django-rest-knox = "*"
+requests = "*"
+datetime = "*"
+razorpay = "*"
+invoicegenerator = "*"
+gen-invoice = "*"
+pdfkit = "*"
+xhtml2pdf = "*"
+awsebcli = "*"
+pypiwin32 = "*"
+pywin32-228-cp39-cp39-win-amd64-whl = "*"
+pywin32 = {path = "C:/Users/anup2/AppData/Local/Programs/Python/Python37/Scripts/pywin32-228-cp37-cp37m-win_amd64.whl"}
+
+[requires]
+python_version = "3.7"
+
+[pipenv]
+allow_prereleases = true
