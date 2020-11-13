@@ -412,11 +412,15 @@ class MeetingRoomAPIView(
 
     def create(self, request, *args, **kwargs):
         print("IN CREATE")
+        print(request.data)
         # now = datetime.now(timezone.utc)
         start = request.data.get("start")
         end = request.data.get("end")
         print("RECEIVED START AND END AS "+ str(start) + " and " + str(end))
-
+        if start == ":00" :
+            raise ValidationError("The start date or time is incorrect")
+        elif end == ":00":
+            raise ValidationError("The end date or time is incorrect")
         new_start = self.convert_to_date(start)
         new_end = self.convert_to_date(end)
 
@@ -467,6 +471,12 @@ class MeetingRoomAPIView(
 
         print("request.data['company'] = " + str(request.data['company']))
         # print("The value is = " + (request.user.profile_id.company_name))
+
+        try:
+            print(str(request.user))
+            myprofile_id = request.user.profile_id
+        except:
+            raise ValidationError("Cannot make the booking!!")
 
         if request.data['company'] != (request.user.profile_id.company_name.id):
             if request.user.is_admin:

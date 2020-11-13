@@ -126,27 +126,31 @@ def meeting_room_list(request):
     #                           date_to__year__lte=year,
     #                           date_to__month__lte=month)
 
-    profile = request.user.profile_id
-    print("PROFILE IS " + str(profile.id))
-    # qs2 = Company.objects.get(profile)
-    # qs2 = UserProfile.objects.get(profile)
+    try:
+        profile = request.user.profile_id
+        print("PROFILE IS " + str(profile.id))
+        # qs2 = Company.objects.get(profile)
+        # qs2 = UserProfile.objects.get(profile)
 
-    # THIS IS HOW YOU ACCESS THE COMPANY NAME OF THE USER. YOU CAN ACCESS THE USED_THIS_MONTH ALSO AS SUCH
-    print("COMPANY IS " + str(profile.company_name.company_name))
-    # qs = MeetingRoom.objects.all()
-    # if request.user.is_authenticated:
+        # THIS IS HOW YOU ACCESS THE COMPANY NAME OF THE USER. YOU CAN ACCESS THE USED_THIS_MONTH ALSO AS SUCH
+        print("COMPANY IS " + str(profile.company_name.company_name))
+        # qs = MeetingRoom.objects.all()
+        # if request.user.is_authenticated:
 
-    # qs2 =
+        # qs2 =
 
-    qs = MeetingRoom.objects.filter(start__year__gte=now_year,
-                                    start__month__gte=now_month,
-                                    start__day__gte=now_day,
-                                    end__year__lte=now_year,
-                                    end__month__lte=now_month,
-                                    end__day__lte=now_day
-                                    # company=profile.company_name
-                                    )
-    context = {"qs": qs}
+        qs = MeetingRoom.objects.filter(start__year__gte=now_year,
+                                        start__month__gte=now_month,
+                                        start__day__gte=now_day,
+                                        end__year__lte=now_year,
+                                        end__month__lte=now_month,
+                                        end__day__lte=now_day
+                                        # company=profile.company_name
+                                        )
+        context = {"qs": qs}
+    except:
+        raise Exception("Please login")
+
     return render(request, "list.html", context)
 
 '''

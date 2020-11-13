@@ -11,7 +11,9 @@ router = routers.DefaultRouter()
 
 # MeetingRoomTest is used in the line below to check template
 router.register(r'api', MeetingRoomAPIView)
+
 urlpatterns = [
+    # list/ is not for api
     path('list/', meeting_room_list),
     path('add/', meeting_room_add),
     path('download/', NewAPIView.as_view()),
