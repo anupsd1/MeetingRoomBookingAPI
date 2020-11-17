@@ -1,0 +1,1 @@
+web: gunicorn workcult_1.wsgi --log-file -

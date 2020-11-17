@@ -62,6 +62,7 @@ def do_payment(company_name, email, total_amount):
         "sms_notify": 0,
         # "email_notify": 1
     }
+
     # url = 'https://api.razorpay.com/v1/invoices/'
     #
     #

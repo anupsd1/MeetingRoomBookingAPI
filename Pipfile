@@ -25,6 +25,10 @@ pywin32-228-cp39-cp39-win-amd64-whl = "*"
 pywin32 = {path = "C:/Users/anup2/AppData/Local/Programs/Python/Python37/Scripts/pywin32-228-cp37-cp37m-win_amd64.whl"}
 gunicorn = "*"
 pywin32-228-cp37-cp37-win-amd64-whl = "*"
+django-storages = "*"
+boto3 = "*"
+pillow = "*"
+whitenoise = "*"
 
 [requires]
 python_version = "3.7"
