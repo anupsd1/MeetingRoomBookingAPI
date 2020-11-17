@@ -21,13 +21,13 @@ pdfkit = "*"
 xhtml2pdf = "*"
 awsebcli = "*"
 pypiwin32 = "*"
-
 gunicorn = "*"
-
 django-storages = "*"
 boto3 = "*"
 pillow = "*"
 whitenoise = "*"
+pip = "*"
+update = "*"
 
 [requires]
 python_version = "3.7"

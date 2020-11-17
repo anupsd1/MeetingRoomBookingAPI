@@ -6,9 +6,9 @@
 .ebextensions/*
 
 node_modules/*
+notepad.txt
 
 
-email_info.py
 requirements.txt
 workcult_1/.elasticbeanstalk
 workcult_1/.ebextensions
