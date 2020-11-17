@@ -1,0 +1,25 @@
+1. Complete design template of PDF.
+2. Check condition in meeting room and generate invoice accordingly.
+3.
+
+NEXT TO DO:
+1. Make sure the template reflects with the original values.
+2. What all should be passed to the template? (including invoice number)
+3. Pass those values
+4. Render the PDF
+5. Add better CSS to the invoice
+6. Send email to client with invoice
+7. Webhooks to check if payment complete? Have to deploy the app for it
+8. SEND HTML EMAILER AS MESSAGE
+DONE! -
+31-05-2020:
+Update used_this_month properly for every month when no invoice is created
+and also when invoice is created
+
+
+Raised ValidationError in MeetingRoom/api.py for the following so that when an empty date and time is passed, it
+raises an error.
+ if start == ":00" :
+            raise ValidationError("The start date or time is incorrect")
+        elif end == ":00":
+            raise ValidationError("The end date or time is incorrect")

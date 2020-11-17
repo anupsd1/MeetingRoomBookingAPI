@@ -502,7 +502,7 @@
             ],
             "version": "==2020.4"
         },
-        
+
         "pyyaml": {
             "hashes": [
                 "sha256:06a0d7ba600ce0b2d2fe2e78453a470b5a6e000a985dd4a4e54e436cc36b0e97",
