@@ -20,7 +20,7 @@ gen-invoice = "*"
 pdfkit = "*"
 xhtml2pdf = "*"
 awsebcli = "*"
-pypiwin32 = "*"
+
 gunicorn = "*"
 django-storages = "*"
 boto3 = "*"
@@ -29,7 +29,8 @@ whitenoise = "*"
 update = "*"
 setuptools = "*"
 pip = "==20.2.4"
-
+pypiwin32 = {version = "*", sys_platform = "== 'win32'"}
+pywin32 = {version = "*", sys_platform = "== 'win32'"}
 [requires]
 python_version = "3.7"
 
