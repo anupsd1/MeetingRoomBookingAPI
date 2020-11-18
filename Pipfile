@@ -26,9 +26,9 @@ django-storages = "*"
 boto3 = "*"
 pillow = "*"
 whitenoise = "*"
-pip = "==20.2.4"
 update = "*"
 setuptools = "*"
+pip = "==20.2.4"
 
 [requires]
 python_version = "3.7"
