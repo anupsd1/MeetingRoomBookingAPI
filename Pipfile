@@ -28,7 +28,7 @@ pillow = "*"
 whitenoise = "*"
 pip = "*"
 update = "*"
-setuptools = "<20"
+setuptools = "*"
 
 [requires]
 python_version = "3.7"
