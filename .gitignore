@@ -8,7 +8,7 @@
 node_modules/*
 notepad.txt
 
-
+get-pip.py
 requirements.txt
 workcult_1/.elasticbeanstalk
 workcult_1/.ebextensions
