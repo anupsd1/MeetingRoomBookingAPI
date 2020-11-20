@@ -1,1 +1,1 @@
-web: gunicorn workcult_1.wsgi:application --log-file -
+web: gunicorn --log-file=- workcult_1.wsgi:application
