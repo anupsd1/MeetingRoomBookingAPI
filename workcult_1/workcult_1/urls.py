@@ -23,5 +23,5 @@ urlpatterns = [
     path('frontend/', include('frontend.urls')),
     path('', include("LocalUser.urls")),
     path('admin/', admin.site.urls),
-    path('meeting/', include('MeetingRoom.urls'))
+    path('', include('MeetingRoom.urls'))
 ] + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
