@@ -12,3 +12,11 @@ get-pip.py
 
 workcult_1/.elasticbeanstalk
 workcult_1/.ebextensions
+
+
+workcult_1/settings.py
+workcult_1/MeetingRoom/razorpay_credentials.py
+workcult_1/static
+workcult_1/staticfiles
+workcult_1/email_info.py
+manage.py
