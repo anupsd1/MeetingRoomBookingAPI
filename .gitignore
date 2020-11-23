@@ -20,3 +20,6 @@ workcult_1/static
 workcult_1/staticfiles
 workcult_1/email_info.py
 manage.py
+docker-compose.yml
+Dockerfile
+notepad.txt
